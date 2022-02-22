@@ -30,5 +30,5 @@ steps:
   inputs:
     command: 'publish'
     publishWebProjects: true
-    arguments: '-c release -o ./build_output AspNetCoreWebApplication/AspNetCoreWebApplication.csproj'
+    arguments: '-c release'
 
