@@ -46,3 +46,11 @@ steps:
     bucketName: 'husky-rentals-bucket-1'
     globExpressions: '**'
     targetFolder: 'test'
+
+- task: CloudFormationCreateOrUpdateStack@1
+  inputs:
+    awsCredentials: 'aws-service-conn'
+    regionName: 'ca-central-1'
+    stackName: 'a-stack'
+    templateSource: 'file'
+    templateFile: 'template.yml'
