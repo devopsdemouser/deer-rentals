@@ -14,8 +14,21 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'restore'
+    projects: 'AspNetCoreWebApplication/AspNetCoreWebApplication.csproj'
+    feedsToUse: 'select'
 
 - task: DotNetCoreCLI@2
   inputs:
-    configuration: '$(buildConfiguration)'
+    command: 'restore'
+    projects: 'AspNetCoreWebApplicationTest/AspNetCoreWebApplicationTest.csproj'
+    feedsToUse: 'select'
+
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'publish'
+    publishWebProjects: true
+    arguments: '-c release -o ./build_output AspNetCoreWebApplication/AspNetCoreWebApplication.csproj'
 
