@@ -33,3 +33,16 @@ steps:
     publishWebProjects: true
     arguments: '-c release'
 
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'pack'
+    packagesToPack: '**/*.csproj'
+    versioningScheme: 'off'
+
+- task: S3Upload@1
+  inputs:
+    awsCredentials: 'aws-service-conn'
+    regionName: 'ca-central-1'
+    bucketName: 'husky-rentals-bucket-1'
+    globExpressions: '**'
+    targetFolder: 'test'
