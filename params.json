@@ -1,0 +1,26 @@
+[
+	{
+		"ParameterKey":"ImageId",
+		"ParameterValue":"ami-0b41a64dce89f27e3"},
+	{
+		"ParameterKey":"InstanceType",
+		"ParameterValue":"t2.micro"},
+	{
+		"ParameterKey":"KeyPairName",
+		"ParameterValue":"akey"},
+	{
+		"ParameterKey":"ProjectId",
+		"ParameterValue":"deer-rentals"},
+	{
+		"ParameterKey":"Stage",
+		"ParameterValue":"-"},
+	{
+		"ParameterKey":"SubnetId",
+		"ParameterValue":"subnet-cbb912b1"},
+	{
+		"ParameterKey":"VpcId",
+		"ParameterValue":"parameter2value"},
+	{
+		"ParameterKey":"vpc-8d5b32e5",
+		"ParameterValue":"awscodestar-deer-rentals-WebAppInstanceProfile-RY7Q6HFJ633V"}
+]
