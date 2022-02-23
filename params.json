@@ -19,8 +19,8 @@
 		"ParameterValue":"subnet-cbb912b1"},
 	{
 		"ParameterKey":"VpcId",
-		"ParameterValue":"parameter2value"},
+		"ParameterValue":"vpc-8d5b32e5"},
 	{
-		"ParameterKey":"vpc-8d5b32e5",
+		"ParameterKey":"WebAppInstanceProfile",
 		"ParameterValue":"awscodestar-deer-rentals-WebAppInstanceProfile-RY7Q6HFJ633V"}
 ]
