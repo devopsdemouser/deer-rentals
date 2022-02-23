@@ -52,8 +52,8 @@ steps:
   inputs:
     awsCredentials: 'aws-service-conn'
     regionName: 'ca-central-1'
-    applicationName: 'deer-rentals'
-    deploymentGroupName: 'staging'
+    applicationName: 'deer-rentals-az'
+    deploymentGroupName: 'deer-rentals-az-staging'
     deploymentRevisionSource: 's3'
     bucketName: 'husky-rentals-bucket-1'
     bundleKey: 'packaged-artifact/package.tgz'
