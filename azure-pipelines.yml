@@ -30,7 +30,7 @@ steps:
 - script: chmod +x scripts/*
   displayName: 'Scripts executable'
 
-- script: tar -czvf package.tgz AspNetCoreWebApplication/wwwroot/**/* AspNetCoreWebApplication/bin/**/* scripts/* appspec.yml mytemplate.yml params.json
+- script: tar -czvf package.tgz AspNetCoreWebApplication/wwwroot/**/* AspNetCoreWebApplication/bin/**/* scripts/* appspec.yml mytemplate.yml params.json requirements.txt template-configuration.json
   displayName: 'Packaging to tgz'
 
 - task: S3Upload@1
