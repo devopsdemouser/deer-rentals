@@ -54,3 +54,5 @@ steps:
     stackName: 'a-stack'
     templateSource: 'file'
     templateFile: 'template.yml'
+    templateParametersFile: 'params.json'
+
