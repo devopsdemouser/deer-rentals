@@ -51,9 +51,9 @@ steps:
   inputs:
     awsCredentials: 'aws-service-conn'
     regionName: 'ca-central-1'
-    stackName: 'a-stack'
+    stackName: 'az-stack'
     templateSource: 'file'
-    templateFile: 'template.yml'
+    templateFile: 'mytemplate.yml'
     templateParametersFile: 'params.json'
     capabilityAutoExpand: true
 
