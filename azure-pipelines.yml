@@ -27,6 +27,9 @@ steps:
     publishWebProjects: true
     arguments: '-c release'
 
+- script: chmod +x scripts/*
+  displayName: 'Scripts executable'
+
 - script: tar -czvf package.tgz AspNetCoreWebApplication/wwwroot/**/* AspNetCoreWebApplication/bin/**/* scripts/* appspec.yml mytemplate.yml params.json
   displayName: 'Packaging to tgz'
 
