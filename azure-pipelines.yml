@@ -33,12 +33,6 @@ steps:
     publishWebProjects: true
     arguments: '-c release'
 
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'pack'
-    packagesToPack: '**/*.csproj'
-    versioningScheme: 'off'
-
 - task: S3Upload@1
   inputs:
     awsCredentials: 'aws-service-conn'
