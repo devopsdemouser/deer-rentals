@@ -27,13 +27,16 @@ steps:
     publishWebProjects: true
     arguments: '-c release'
 
+- script: tar -czvf package.tgz AspNetCoreWebApplication/wwwroot/**/* AspNetCoreWebApplication/bin/**/* scripts/**/* appspec.yml mytemplate.yml params.json
+  displayName: 'Packaging to tgz'
+
 - task: S3Upload@1
   inputs:
     awsCredentials: 'aws-service-conn'
     regionName: 'ca-central-1'
     bucketName: 'husky-rentals-bucket-1'
-    globExpressions: '**'
-    targetFolder: 'test'
+    globExpressions: 'package.tgz'
+    targetFolder: 'packaged-artifact'
 
 - task: CloudFormationCreateOrUpdateStack@1
   inputs:
