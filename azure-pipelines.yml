@@ -37,7 +37,7 @@ steps:
   inputs:
     awsCredentials: 'aws-service-conn'
     regionName: 'ca-central-1'
-    bucketName: 'husky-rentals-bucket-1'
+    bucketName: 'aws-codestar-ca-central-1-002500703685-husky-rentals-pipe'
     globExpressions: 'package.tgz'
     targetFolder: 'packaged-artifact'
 
@@ -58,7 +58,7 @@ steps:
     applicationName: 'deer-rentals-az'
     deploymentGroupName: 'deer-rentals-az-staging'
     deploymentRevisionSource: 's3'
-    bucketName: 'husky-rentals-bucket-1'
+    bucketName: 'aws-codestar-ca-central-1-002500703685-husky-rentals-pipe'
     bundleKey: 'packaged-artifact/package.tgz'
     description: 'Deer rentals deployment'
 
