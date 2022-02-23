@@ -48,3 +48,14 @@ steps:
     templateParametersFile: 'params.json'
     capabilityAutoExpand: true
 
+- task: CodeDeployDeployApplication@1
+  inputs:
+    awsCredentials: 'aws-service-conn'
+    regionName: 'ca-central-1'
+    applicationName: 'deer-rentals'
+    deploymentGroupName: 'staging'
+    deploymentRevisionSource: 's3'
+    bucketName: 'husky-rentals-bucket-1'
+    bundleKey: 'packaged-artifact/package.tgz'
+    description: 'Deer rentals deployment'
+
