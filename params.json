@@ -4,7 +4,7 @@
 		"ParameterValue":"ami-0b41a64dce89f27e3"},
 	{
 		"ParameterKey":"InstanceType",
-		"ParameterValue":"t2.micro"},
+		"ParameterValue":"t2.small"},
 	{
 		"ParameterKey":"KeyPairName",
 		"ParameterValue":"akey"},
